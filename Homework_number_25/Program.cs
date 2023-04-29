@@ -18,6 +18,13 @@ namespace Homework_number_25
             int lastIndexInArray = numbers.Length - 1;
             int countNumbersSorted;
 
+            Console.WriteLine("Массив до сортировки: ");
+
+            foreach (int number in numbers)
+            {
+                Console.Write($"{number},");
+            }
+
             while (isSorted == false)
             {
                 countNumbersSorted = 0;
@@ -45,6 +52,13 @@ namespace Homework_number_25
                 {
                     isSorted = true;
                 }
+            }
+
+            Console.WriteLine("\nМассив после сортировки: ");
+
+            foreach (int number in numbers)
+            {
+                Console.Write($"{number},");
             }
         }
     }
